@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script
+        crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js">
+    </script>
+</head>
+<body>
+    <section class="sign-in">
+        <!--main-sign-in-page---------->
+        <div class="main-page">
+            <!--phone-top-bar-screen--------->
+            <div class="top-bar">
+        </div>
+        <!--name------------->
+        <div class="name">
+            <h1>
+                Fu**k
+            </h1>
+            Perform your method now you can see me
+        </div>
+        <!--btns---------------------->
+        <div class="form-btns">
+            <button class="s-btn">Sign In</button>
+            <!--facebook-google-github-------->
+            <button class="f-btn">Sign In with Facebook</button>
+     
+            <button class="go-btn">Sign In with Google</button>
+    
+            <button class="gi-btn">Sign In with Github</button>
+            <!--new-account------>
+            <a class="new-btn" href="#">New Account ?</a>
+        </div>
+        <!--cancel-btn------------>
+        <div class="cancel">
+            <a href="#">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+        
+        <!--sign-in-page--------------->
+        <div class="sign-in-page">
+            <form style="margin-top: 420px;">
+                <!--email------->
+                <input placeholder="Email" type="email" />
+                <!--password------->
+                <input placeholder="Password" type="password" />
+                <!--btn------->
+                <button>Sign In</button>
+            </form>
+        </div>
+        <!--sign-up-page--------------->
+        <div class="sign-up-page">
+            <form style="margin-top: 420px;">
+                <!--email------->
+                <input placeholder="Email" type="email" />
+                <!--password------->
+                <input placeholder="Password" type="password" />
+                <!--password------->
+                <input placeholder="Repeat Password" type="password" />
+                <!--btn------->
+                <button>Sign Up</button>
+            </form>
+        </div>
+    </section>
+        <!--background-circule-------------------->
+        <div class="bg-circule">
+        </div>
+        <!--Jquery------------>
+        <script type="text/javascript" src="js/Jquery.js" ></script>
+    
+        <script language="JavaScript" type="text/javascript">
+        /*For Sign In---------------------------------*/
+ 
+        $(document).on('click','.s-btn',function(){
+            $('.sign-in').addClass('active-sign-in').siblings('.sign-in').removeClass('active-sign-up')
+        }); 
+            
+        /*For Sign up-------------------------------*/
+            
+        $(document).on('click','.new-btn',function(){
+            $('.sign-in').addClass('active-sign-up').siblings('.sign-in').removeClass('active-sign-in')
+        }); 
+            
+        /*For Go Back To Main Page---------------------*/
+            
+        $(document).ready(function(){
+            $('.cancel a').click(function(){
+                $('.sign-in').removeClass('active-sign-in , active-sign-up')
+            
+            })
+        });
+</script>
+</body>
+</html>
